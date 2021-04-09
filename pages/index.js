@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home2.module.css'
+import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
 export default function Home() {
   return (
@@ -28,6 +31,35 @@ export default function Home() {
       </p>
 
 
+      <div className={styles.reposearch}>
+        <div className={styles.repoinput}>
+          <FontAwesomeIcon icon={faSearch} className={styles.font}></FontAwesomeIcon>
+          <input type="text" placeholder="Eg. facebook/react" className={styles.buttontext} />
+        </div>
+
+        <div className={styles.buttoncommit}>
+          <button type="button" class={styles.button} onClick={() => { alert('alert'); }}>See commits 🚀</button>
+        </div>
+
+        <div className={styles.suggestrepodescrip}>
+          Or pick one of these suggested repos
+      </div>
+
+        <div className={styles.suggestions}>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem}>django/django</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem}>microsoft/vscode</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem}>jezen/is-thirteen</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem}>benawad/dogehouse</button>
+
+
+        </div>
+
+      </div>
+
+
     </div>
+
+
+
   )
 }
