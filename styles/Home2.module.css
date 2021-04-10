@@ -19,7 +19,7 @@
   }
   .logo {
     /* Inside Auto Layout */
-    position: relative;
+    position: absolute;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -48,22 +48,32 @@
     margin: 0 10px;
   }
   .title {
-    height: 180px;
-    width: 540px;
-    left: 430px;
+    position: absolute;
+    height: 160px;
+    left: 630px;
+    right: 430px;
     top: 146px;
-    font-size: 72px;
+    width: 540px;
     font-style: normal;
     font-weight: 600;
+    font-size: 72px;
     line-height: 80px;
-    letter-spacing: -3px;
+
+    /* or 111% */
     text-align: center;
+    letter-spacing: -3px;
+
+    /* Dark */
     color: #18214d;
   }
 
   .description {
-    width: 445px;
-    left: 477px;
+    position: absolute;
+    height: 88px;
+    left: 677px;
+    right: 478px;
+    top: 322px;
+    width:445px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -152,7 +162,8 @@
   .suggestrepodescrip {
     position: absolute;
     height: 20px;
-    left: 450px;
+    width: 300px;
+    left: 400px;
     right: 167px;
     top: 90px;
 
@@ -160,7 +171,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 143% */
     letter-spacing: -0.4px;
@@ -369,6 +380,7 @@
   .suggestrepodescrip {
     position: absolute;
     height: 20px;
+    width: 236px;
     left: 297px;
     right: 167px;
     top: 90px;
