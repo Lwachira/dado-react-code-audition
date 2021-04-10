@@ -19,7 +19,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
-    font-size: 58px;
+    font-size: 28px;
     line-height: 34px;
 
     /* identical to box height */
@@ -111,8 +111,8 @@
     position: absolute;
     width: 89px;
     height: 28px;
-    left: 185px;
-    top: 190px;
+    left: 300px;
+    top: 450px;
 
     /* Paragraph / 01 */
     font-family: Inter;
@@ -378,7 +378,7 @@
     width: 89px;
     height: 28px;
     left: 185px;
-    top: 190px;
+    top: 400px;
 
     /* Paragraph / 01 */
     font-family: Inter;
@@ -398,7 +398,7 @@
     position: relative;
     width: 486px;
     height: 44px;
-    left: 120px;
+    left: 100px;
     top: 130px;
     display: block;
 
@@ -502,7 +502,7 @@
   .committime1 {
     grid-area: committime1;
     position: absolute;
-    left: 0%;
+    left: 10%;
     right: 0%;
     top: 72.55%;
     bottom: 0%;
@@ -636,8 +636,8 @@
     position: absolute;
     width: 89px;
     height: 28px;
-    left: 185px;
-    top: 190px;
+    left: 300px;
+    top: 450px;
 
     /* Paragraph / 01 */
     font-family: Inter;
@@ -896,8 +896,8 @@
     position: absolute;
     width: 89px;
     height: 28px;
-    left: 185px;
-    top: 190px;
+    left: 350px;
+    top: 450px;
 
     /* Paragraph / 01 */
     font-family: Inter;
@@ -1043,70 +1043,47 @@
 }
 
 @media (min-width: 1025px) {
-  .header {
-    position: absolute;
-    width: 1400px;
-    height: 130px;
-    left: 0px;
-    top: 0px;
+  .gridheadcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo"
+      "repoinput"
+      "button";
   }
-
   .logo {
-    /* Auto Layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 198px;
+    grid-area: logo;
+    position: relative;
+    width: 398px;
     height: 34px;
-    left: 145px;
+    left: 350px;
     top: 48px;
+    font-family: Inter;
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 58px;
     line-height: 34px;
 
     /* identical to box height */
     letter-spacing: -0.6px;
 
+    text-align: center;
     /* Dark */
     color: #18214d;
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
   }
-  .reposearch {
-    position: absolute;
-    width: 880px;
-    height: 58px;
-    left: 0px;
-    top: 0px;
-  }
-
   .repoinput {
-    position: absolute;
-    width: 666px;
+    grid-area: repoinput;
+    position: relative;
+    width: 466px;
     height: 58px;
-    left: 375px;
-    top: 36px;
+    left: 300px;
+    top: 50px;
     /* Neutral */
     background: #dfe4ea;
     border: 0px solid;
     border-radius: 8px;
-  }
-
-  .font {
-    position: absolute;
-    width: 22.82px;
-    left: 16.16px;
-    top: 21px;
-    bottom: 17px;
-    color: #29335c;
   }
   .repotext {
     position: absolute;
@@ -1129,14 +1106,23 @@
     background-color: transparent;
     border: 0px solid;
   }
+  .font {
+    position: absolute;
+    width: 22.82px;
+    left: 16.16px;
+    top: 21px;
+    bottom: 17px;
+    color: #29335c;
+  }
 
   .button {
-    position: absolute;
+    grid-area: button;
+    position: relative;
     width: 466px;
     height: 58px;
-    left: 175px;
+    left: 300px;
     right: 10.36%;
-    top: 146px;
+    top: 80px;
     background-color: #f3663f;
     border: 0px solid;
     border-radius: 8px;
@@ -1144,7 +1130,7 @@
 
   .buttontext {
     position: absolute;
-    left: 10%;
+    left: 30%;
     right: 0%;
     top: 30%;
     bottom: 21.72%;
@@ -1170,8 +1156,8 @@
     position: absolute;
     width: 286px;
     height: 44px;
-    left: 557px;
-    top: 110px;
+    left: 390px;
+    top: 250px;
     /* Display / 03 */
     font-family: Inter;
     font-style: normal;
@@ -1179,8 +1165,6 @@
     font-size: 36px;
     line-height: 44px;
 
-    /* identical to box height, or 122% */
-    text-align: center;
     letter-spacing: -1.5px;
 
     /* Primary */
@@ -1191,8 +1175,8 @@
     position: absolute;
     width: 89px;
     height: 28px;
-    left: 655px;
-    top: 188px;
+    left: 455px;
+    top: 388px;
 
     /* Paragraph / 01 */
     font-family: Inter;
@@ -1219,12 +1203,12 @@
 
   .commit {
     position: relative;
-    width: 1110px;
+    width: 810px;
     height: 94px;
-    left: 145px;
-    top: 238px;
+    left: 100px;
+    top: 150px;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   .gridcontainer {
@@ -1240,7 +1224,7 @@
   .commitmessage1 {
     grid-area: commitmessage1;
     position: absolute;
-    width: 700px;
+    width: 400px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1265,8 +1249,8 @@
   .committime1 {
     grid-area: committime1;
     position: absolute;
-    left: 85.05%;
-    right: 0%;
+    left: 10px;
+    right: 0px;
     top: 32.98%;
     bottom: 37.23%;
 
@@ -1324,25 +1308,24 @@
 }
 
 @media (min-width: 1201px) {
-  .header {
-    position: absolute;
-    width: 1900px;
-    height: 130px;
-    left: 0px;
-    top: 0px;
+  .gridheadcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo"
+      "repoinput"
+      "button";
   }
   .logo {
-    /* Auto Layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 258px;
+    grid-area: logo;
+    position: relative;
     height: 34px;
-    left: 145px;
-    top: 48px;
+    left: 0%;
+    right: 0%;
+    top: 36px;
+    font-family: Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -1351,42 +1334,21 @@
     /* identical to box height */
     letter-spacing: -0.6px;
 
+    text-align: center;
     /* Dark */
     color: #18214d;
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
   }
-  .reposearch {
-    position: absolute;
-    width: 880px;
-    height: 58px;
-    left: 0px;
-    top: 0px;
-  }
-
   .repoinput {
+    grid-area: repoinput;
     position: absolute;
     width: 666px;
     height: 58px;
-    left: 475px;
+    left: 375px;
     top: 36px;
     /* Neutral */
     background: #dfe4ea;
     border: 0px solid;
     border-radius: 8px;
-  }
-
-  .font {
-    position: absolute;
-    width: 22.82px;
-    left: 16.16px;
-    top: 21px;
-    bottom: 17px;
-    color: #29335c;
   }
   .repotext {
     position: absolute;
@@ -1409,14 +1371,23 @@
     background-color: transparent;
     border: 0px solid;
   }
+  .font {
+    position: absolute;
+    width: 22.82px;
+    left: 16.16px;
+    top: 21px;
+    bottom: 17px;
+    color: #29335c;
+  }
 
   .button {
+    grid-area: button;
     position: absolute;
+    width: 198px;
     height: 58px;
-    width: 266px;
-    left: 75.5%;
-    right: 10.36%;
-    top: 36px;
+    left: 1050px;
+    right: 50px;
+    top: 35px;
     background-color: #f3663f;
     border: 0px solid;
     border-radius: 8px;
@@ -1424,7 +1395,7 @@
 
   .buttontext {
     position: absolute;
-    left: 10%;
+    left: 0%;
     right: 0%;
     top: 30%;
     bottom: 21.72%;
@@ -1450,8 +1421,8 @@
     position: absolute;
     width: 286px;
     height: 44px;
-    left: 857px;
-    top: 110px;
+    left: 557px;
+    top: 162px;
     /* Display / 03 */
     font-family: Inter;
     font-style: normal;
@@ -1472,7 +1443,7 @@
     width: 89px;
     height: 28px;
     left: 655px;
-    top: 188px;
+    top: 288px;
 
     /* Paragraph / 01 */
     font-family: Inter;
@@ -1500,7 +1471,7 @@
     position: relative;
     width: 1110px;
     height: 94px;
-    left: 345px;
+    left: 145px;
     top: 238px;
     justify-content: center;
     padding-bottom: 40px;

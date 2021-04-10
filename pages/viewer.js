@@ -4,11 +4,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function DisplayData(props) {
-    if (props.isError === false) {
+    if (props.isError === true) {
         return (<div className={styles.repoerror}>Something went wrong ... Try again please</div>)
     }
 
-    if (props.isLoading || props.data.length > 0) {
+    if (props.isLoading || props.data.length < 0) {
         return (
             <div className={styles.repoloading}>
                 <p>Loading...</p>
@@ -96,7 +96,7 @@ export default function Viewer() {
                 <p>{repoHeading}</p>
             </div>
 
-            {isError && <div className={styles.repoerror}>Something went wrong ... Try again please</div>}
+           {/*  {isError && <div className={styles.repoerror}>Something went wrong ... Try again please</div>}
 
             { isLoading && data.length < 0 ? (
                 <div className={styles.repoloading}>
@@ -121,9 +121,9 @@ export default function Viewer() {
                     }
                 </div>
             )}
+ */}
 
-
-            {/*     <DisplayData isError={isError} isLoading={isLoading} data={data} /> */}
+                 <DisplayData isError={isError} isLoading={isLoading} data={data} /> 
 
 
         </>
