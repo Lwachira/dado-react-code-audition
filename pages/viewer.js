@@ -10,18 +10,26 @@ export default function Viewer() {
     const [query, setQuery] = useState(repo);
     const [repoHeading, setRepoText] = useState(repo);
     const [url, setUrl] = useState(
-        `https://api.github.com/repos/${repo}/commits?per_page=10`,
+        `https://api.github.com/repos/${repo}/commits?per_page=100`,
     );
 
     const [isLoading, setIsLoading] = useState(false);
-
+    const [isError, setIsError] = useState(false);
     useEffect(() => {
         const fetchData = async () => {
+            setIsError(false);
             setIsLoading(true);
-            const result = await axios(url);
-            setData(result.data);
-            setIsLoading(false);
-            setRepoText(query)
+            try {
+                const result = await axios(url);
+                setData(result.data);
+                setIsLoading(false);
+                setRepoText(query)
+            } catch (error) {
+                setIsError(true);
+                setIsLoading(false);
+
+            }
+
         };
 
         fetchData();
@@ -50,26 +58,33 @@ export default function Viewer() {
                 <p>{repoHeading}</p>
             </div>
 
-            {isLoading && data.length > 0 ? (
+            {isError && <div className={styles.repoerror}>Something went wrong ... Try again please</div>}
+
+            {isLoading || data.length < 0 ? (
                 <div className={styles.repoloading}>
                     <p>Loading...</p>
                 </div>
             ) : (
                 <div>
-                    {data.map(item => (
-                        <div className={styles.commit} key={item.sha}>
-                            <div className={styles.commitmedia}>
-                                <img src={item.author.avatar_url} alt="Avatar" className={styles.commitimg} />
-                                <p>{item.commit.author.name}</p>
+                    {
+                        data.map(item => (
+                            <div className={styles.gridcontainer}>
+                                <div className={styles.commit}>
+
+                                    <div className={styles.commitmessage1}>{item.commit.message}</div>
+                                    <div className={styles.commitauthor1}>{item.commit.author.name}</div>
+                                    <div className={styles.commitimage1}>
+                                        <img src={item.author !== null ? item.author.avatar_url : "https://via.placeholder.com/150x150?text=No Image"} alt="Avatar" className={styles.commitimg} />
+                                    </div>
+                                    <div className={styles.committime1}>{item.commit.author.date}</div>
+                                </div>
                             </div>
-
-                            <p className={styles.commitmessage}>{item.commit.message}</p>
-                            <p className={styles.committime}>{item.commit.author.date}</p>
-                        </div>
-                    ))}
-
+                        ))
+                    }
                 </div>
             )}
+
+
 
 
         </>
