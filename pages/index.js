@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import styles from '../styles/Home2.module.css'
+import styles from '../styles/Home.module.css'
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-
+import { useRouter } from 'next/router'
 export default function Home() {
   const [disableCommit, setDisableCommit] = useState(true);
   const [repoText, setRepoText] = useState("");
+  const router = useRouter()
 
   return (
     <div className={styles.container}>
@@ -48,7 +47,7 @@ export default function Home() {
         </div>
 
         <div className={styles.buttoncommit}>
-          <button type="button" className={styles.button} disabled={disableCommit} onClick={() => { console.log(repoText); }}>
+          <button type="button" className={styles.button} disabled={disableCommit} onClick={() => { router.push(`/viewer?repo=${repoText}`, undefined, { shallow: true }) }}>
             {
 
               disableCommit ? "Enter Repo" : "See commits 🚀"
@@ -62,10 +61,10 @@ export default function Home() {
       </div>
 
         <div className={styles.suggestions}>
-          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { console.log('django/django'); }}>django/django</button>
-          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { console.log('microsoft/vscode'); }}>microsoft/vscode</button>
-          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { console.log('jezen/is-thirteen'); }}>jezen/is-thirteen</button>
-          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { console.log('benawad/dogehouse'); }}>benawad/dogehouse</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { router.push('/viewer?repo=django/django', undefined, { shallow: true }) }}>django/django</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { router.push('/viewer?repo=microsoft/vscode', undefined, { shallow: true }); }}>microsoft/vscode</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { router.push('/viewer?repo=jezen/is-thirteen', undefined, { shallow: true }); }}>jezen/is-thirteen</button>
+          <button type="button" placeholder="Eg. facebook/react" className={styles.suggestionitem} onClick={() => { router.push('/viewer?repo=benawad/dogehouse', undefined, { shallow: true }); }}>benawad/dogehouse</button>
         </div>
 
       </div>

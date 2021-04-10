@@ -1,0 +1,241 @@
+@media (max-width: 1440px) {
+  .header {
+    position: absolute;
+    width: 1400px;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .logo {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 198px;
+    height: 34px;
+    left: 145px;
+    top: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    /* identical to box height */
+    letter-spacing: -0.6px;
+
+    /* Dark */
+    color: #18214d;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+  .reposearch {
+    position: absolute;
+    width: 880px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .repoinput {
+    position: absolute;
+    width: 666px;
+    height: 58px;
+    left: 375px;
+    top: 36px;
+    /* Neutral */
+    background: #dfe4ea;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+
+  .font {
+    position: absolute;
+    width: 22.82px;
+    left: 16.16px;
+    top: 21px;
+    bottom: 17px;
+    color: #29335c;
+  }
+  .repotext {
+    position: absolute;
+    width: 300px;
+    height: 28px;
+    left: 45.63px;
+    top: 15px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    letter-spacing: -0.5px;
+
+    /* Placeholder primary */
+    color: #29335c;
+    background-color: transparent;
+    border: 0px solid;
+  }
+
+  .buttoncommit {
+    position: absolute;
+    height: 58px;
+    left: 75.5%;
+    right: 10.36%;
+    top: 36px;
+    background-color: #f3663f;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+
+  .button {
+    position: absolute;
+    left: 10%;
+    right: 0%;
+    top: 30%;
+    bottom: 21.72%;
+
+    /* Buttons / Large */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    /* White */
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px solid;
+  }
+
+  .repobodyheading {
+    position: absolute;
+    width: 286px;
+    height: 44px;
+    left: 557px;
+    top: 110px;
+    /* Display / 03 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    /* identical to box height, or 122% */
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    /* Primary */
+    color: #29335c;
+  }
+
+  .repoloading {
+    position: absolute;
+    width: 89px;
+    height: 28px;
+    left: 655px;
+    top: 188px;
+
+    /* Paragraph / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.4px;
+
+    /* Dark */
+    color: #18214d;
+  }
+
+  .commit {
+    position: relative;
+    width: 1110px;
+    height: 94px;
+    left: 145px;
+    top: 238px;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .commitmedia {
+    position: absolute;
+    left: 0%;
+    right: 85.59%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .commitimg {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Ellipse 2 */
+
+
+
+    background: #c4c4c4;
+  }
+  .commitmessage {
+    position: absolute;
+    width: 750px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    left: 16.85%;
+    right: 42.79%;
+    top: 0.98%;
+    bottom: 37.23%;
+
+    /* Paragraph / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    letter-spacing: -0.4px;
+
+    /* Dark */
+    color: #18214d;
+  }
+  .committime {
+    position: absolute;
+    left: 85.05%;
+    right: 0%;
+    top: 0.98%;
+    bottom: 37.23%;
+
+    /* Paragraph / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: right;
+    letter-spacing: -0.4px;
+
+    /* Dark */
+    color: #18214d;
+  }
+}
