@@ -169,12 +169,12 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 2px 15px;
     grid-template-areas:
-      "commitmessage1 commitmessage1 commitmessage1"
-      "commitimage1 commitauthor1 committime1";
+      "commitmessage commitmessage commitmessage"
+      "commitimage commitauthor committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     /* Paragraph / 01 */
     font-family: Inter;
     font-style: normal;
@@ -198,8 +198,8 @@
     text-overflow: ellipsis;
   }
 
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: relative;
     left: 0%;
     right: 92.42%;
@@ -213,8 +213,8 @@
     height: 30px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: relative;
     left: 0%;
     right: 92.42%;
@@ -222,8 +222,8 @@
     bottom: 0%;
   }
 
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: relative;
     left: 0%;
     right: 92.42%;
@@ -409,13 +409,13 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitmessage1 commitmessage1 commitmessage1"
-      "commitimage1 commitauthor1 committime1";
+      "commitmessage commitmessage commitmessage"
+      "commitimage commitauthor committime";
   }
 
   
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     /* Paragraph / 01 */
     font-family: Inter;
     font-style: normal;
@@ -439,8 +439,8 @@
     text-overflow: ellipsis;
   }
 
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: relative;
     left: 0%;
     right: 92.42%;
@@ -454,8 +454,8 @@
     height: 30px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: relative;
     left: 0%;
     right: 92.42%;
@@ -463,8 +463,8 @@
     bottom: 0%;
   }
 
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: relative;
     left: 0%;
     right: 92.42%;
@@ -519,7 +519,7 @@
   }
   .repotext {
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: 28px;
     left: 45.63px;
     top: 15px;
@@ -652,12 +652,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitmessage1 commitmessage1 commitmessage1"
-      "commitimage1 commitauthor1 committime1";
+      "commitmessage commitmessage commitmessage"
+      "commitimage commitauthor committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -681,8 +681,8 @@
     color: #18214d;
   }
 
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: absolute;
     left: 0%;
     right: 92.42%;
@@ -696,8 +696,8 @@
     height: 30px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: absolute;
     left: 11.62%;
     right: 67.17%;
@@ -718,8 +718,8 @@
     /* Dark */
     color: #18214d;
   }
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: absolute;
     left: 10%;
     right: 0%;
@@ -918,12 +918,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitmessage1 commitmessage1 commitmessage1"
-      "commitimage1 commitauthor1 committime1";
+      "commitmessage commitmessage commitmessage"
+      "commitimage commitauthor committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -947,8 +947,8 @@
     color: #18214d;
   }
 
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: absolute;
     left: 0%;
     right: 92.42%;
@@ -962,8 +962,8 @@
     height: 30px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: absolute;
     left: 11.62%;
     right: 67.17%;
@@ -984,8 +984,8 @@
     /* Dark */
     color: #18214d;
   }
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -1178,12 +1178,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitmessage1 commitmessage1 commitmessage1"
-      "commitimage1 commitauthor1 committime1";
+      "commitmessage commitmessage commitmessage"
+      "commitimage commitauthor committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -1207,8 +1207,8 @@
     color: #18214d;
   }
 
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: absolute;
     left: 0%;
     right: 92.42%;
@@ -1222,8 +1222,8 @@
     height: 30px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: absolute;
     left: 11.62%;
     right: 67.17%;
@@ -1244,8 +1244,8 @@
     /* Dark */
     color: #18214d;
   }
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -1443,12 +1443,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitimage1 commitmessage1 committime1"
-      "commitauthor1 commitmessage1 committime1";
+      "commitimage commitmessage committime"
+      "commitauthor commitmessage committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     position: absolute;
     width: 400px;
     white-space: nowrap;
@@ -1472,8 +1472,8 @@
     /* Dark */
     color: #18214d;
   }
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: absolute;
     left: 10px;
     right: 0px;
@@ -1494,8 +1494,8 @@
     /* Dark */
     color: #18214d;
   }
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: absolute;
     left: 4.5%;
     right: 90.09%;
@@ -1510,8 +1510,8 @@
     left: 50px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: absolute;
     left: 0%;
     right: 85.59%;
@@ -1709,12 +1709,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitimage1 commitmessage1 committime1"
-      "commitauthor1 commitmessage1 committime1";
+      "commitimage commitmessage committime"
+      "commitauthor commitmessage committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     position: absolute;
     width: 700px;
     white-space: nowrap;
@@ -1738,8 +1738,8 @@
     /* Dark */
     color: #18214d;
   }
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: absolute;
     left: 85.05%;
     right: 0%;
@@ -1760,8 +1760,8 @@
     /* Dark */
     color: #18214d;
   }
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: absolute;
     left: 4.5%;
     right: 90.09%;
@@ -1776,8 +1776,8 @@
     left: 50px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: absolute;
     left: 0%;
     right: 85.59%;
@@ -1975,12 +1975,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "commitimage1 commitmessage1 committime1"
-      "commitauthor1 commitmessage1 committime1";
+      "commitimage commitmessage committime"
+      "commitauthor commitmessage committime";
   }
 
-  .commitmessage1 {
-    grid-area: commitmessage1;
+  .commitmessage {
+    grid-area: commitmessage;
     position: absolute;
     width: 700px;
     white-space: nowrap;
@@ -2004,8 +2004,8 @@
     /* Dark */
     color: #18214d;
   }
-  .committime1 {
-    grid-area: committime1;
+  .committime {
+    grid-area: committime;
     position: absolute;
     left: 85.05%;
     right: 0%;
@@ -2026,8 +2026,8 @@
     /* Dark */
     color: #18214d;
   }
-  .commitimage1 {
-    grid-area: commitimage1;
+  .commitimage {
+    grid-area: commitimage;
     position: absolute;
     left: 4.5%;
     right: 90.09%;
@@ -2042,8 +2042,8 @@
     left: 50px;
     border-radius: 50%;
   }
-  .commitauthor1 {
-    grid-area: commitauthor1;
+  .commitauthor {
+    grid-area: commitauthor;
     position: absolute;
     left: 0%;
     right: 85.59%;

@@ -24,12 +24,12 @@ function DisplayData(props) {
                         <div className={styles.gridcontainer}>
                             <div className={styles.commit}>
 
-                                <div className={styles.commitmessage1}>{item.commit.message}</div>
-                                <div className={styles.commitauthor1}>{item.commit.author.name}</div>
-                                <div className={styles.commitimage1}>
+                                <div className={styles.commitmessage}>{item.commit.message}</div>
+                                <div className={styles.commitauthor}>{item.commit.author.name}</div>
+                                <div className={styles.commitimage}>
                                     <img src={item.author !== null ? item.author.avatar_url : "https://via.placeholder.com/150x150?text=No Image"} alt="Avatar" className={styles.commitimg} />
                                 </div>
-                                <div className={styles.committime1}>{item.commit.author.date}</div>
+                                <div className={styles.committime}>{item.commit.author.date}</div>
                             </div>
                         </div>
                     ))
