@@ -1,3 +1,229 @@
+@media (min-width: 200px) {
+  .container {
+    min-height: 60vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    position: absolute;
+    width: 310px;
+    height: 34px;
+    left: 10px;
+    top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    /* Inside Auto Layout */
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+
+    /* identical to box height */
+    letter-spacing: -0.6px;
+
+    /* Dark */
+    color: #18214d;
+    height: 34px;
+    left: 10%;
+    right: 0%;
+    top: calc(50% - 34px / 2);
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 161px;
+    height: 28px;
+    left: -10px;
+    top: 34px;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+
+  .navigation li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .title {
+    position: absolute;
+    width: 200px;
+    height: 124px;
+    left: 10px;
+    top: 134px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+
+    /* or 111% */
+    text-align: center;
+    letter-spacing: -3px;
+
+    /* Dark */
+    color: #18214d;
+  }
+
+  .description {
+    position: absolute;
+    width: 150px;
+    height: 84px;
+    left: 30px;
+    top: 300px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    text-align: center;
+  }
+  .reposearch {
+    position: absolute;
+    width: 496px;
+    height: 432px;
+    left: 20px;
+    top: 430px;
+    color: #b1b5c5;
+  }
+
+  .repoinput {
+    position: absolute;
+    width: 150px;
+    height: 58px;
+    left: 10px;
+    top: 30px;
+    /* Neutral */
+    background: #dfe4ea;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+  .font {
+    position: absolute;
+    width: 22.82px;
+    left: 16.16px;
+    top: 17px;
+    bottom: 17px;
+    color: #29335c;
+  }
+  .repotext {
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 45.63px;
+    top: 10px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: -0.5px;
+    /* Placeholder primary */
+    color: #b1b5c5;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  .repotext:focus {
+    color: black;
+  }
+  .buttoncommit {
+    position: absolute;
+    width: 150px;
+    height: 58px;
+    left: 10px;
+    top: 120px;
+    background-color: #f3663f;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+  .button {
+    position: absolute;
+    left: 15%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* Buttons / Large */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 28px;
+    align-items: center;
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    /* White */
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  .suggestrepodescrip {
+    position: absolute;
+    width: 380px;
+    height: 40px;
+    left: 10px;
+    top: 202px;
+
+    /* Paragraph / 04 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    letter-spacing: -0.4px;
+    /* Paragraph */
+    color: #3e4462;
+  }
+  .suggestions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 190px;
+    height: 188px;
+    left: -10px;
+    top: 274px;
+  }
+  .suggestionitem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px;
+
+    /* Inside Auto Layout */
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+
+    background-color: #29335c;
+    border: 0px solid;
+    border-radius: 8px;
+    color: white;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.4px;
+  }
+}
+
 @media (min-width: 320px) {
   .container {
     min-height: 60vh;
@@ -30,15 +256,20 @@
 
     /* Dark */
     color: #18214d;
-    position: static;
     height: 34px;
-    left: 0%;
-    right: 0%;
+    right: 10%;
     top: calc(50% - 34px / 2);
+    text-align: center;
   }
   .navigation {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 161px;
+    height: 28px;
+    left: 41px;
+    top: 34px;
     flex-wrap: wrap;
     margin: 20px 0px;
   }
@@ -51,7 +282,7 @@
     position: absolute;
     width: 300px;
     height: 124px;
-    left:1  0px;
+    left: 1 0px;
     top: 134px;
     font-style: normal;
     font-weight: 600;
@@ -230,13 +461,10 @@
   }
   .header {
     position: absolute;
-    width: 410px;
-    height: 34px;
-    left: 45px;
-    top: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 198px;
+    height: 78px;
+    left: 131px;
+    top: 24px;
   }
   .logo {
     /* Inside Auto Layout */
@@ -249,18 +477,27 @@
     /* identical to box height */
     letter-spacing: -0.6px;
 
-    /* Dark */
-    color: #18214d;
-    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 198px;
     height: 34px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 34px / 2);
+    left: 0px;
+    top: 24px;
   }
   .navigation {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 161px;
+    height: 28px;
+    left: calc(50% - 161px / 2 - 0.5px);
+    top: 74px;
     margin: 20px 0px;
   }
 
@@ -273,7 +510,7 @@
     width: 396px;
     height: 124px;
     left: calc(50% - 396px / 2);
-    top: 134px;
+    top: 144px;
     font-style: normal;
     font-weight: 600;
     font-size: 56px;
@@ -409,7 +646,7 @@
     position: absolute;
     width: 190px;
     height: 188px;
-    left: 90px;
+    left: 100px;
     top: 274px;
   }
   .suggestionitem {
@@ -483,6 +720,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0px;
+    position: static;
   }
 
   .navigation li {
@@ -672,9 +910,9 @@
   }
   .header {
     position: absolute;
-    width: 550px;
+    width: 650px;
     height: 34px;
-    left: 175px;
+    left: 45px;
     top: 48px;
     display: flex;
     justify-content: space-between;
@@ -713,7 +951,7 @@
   .title {
     position: absolute;
     height: 160px;
-    left: 160px;
+    left: 120px;
     right: 430px;
     top: 146px;
     width: 540px;
@@ -733,7 +971,7 @@
   .description {
     position: absolute;
     height: 88px;
-    left: 217px;
+    left: 150px;
     right: 478px;
     top: 322px;
     width: 445px;
@@ -846,15 +1084,18 @@
     color: #3e4462;
   }
   .suggestions {
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-auto-rows: 50px;
+    row-gap: 1em;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     justify-content: center;
     position: absolute;
-    width: 745px;
+    width: 615px;
     height: 35px;
-    left: 1px;
+    left: 0px;
     top: 140px;
   }
   .suggestionitem {
@@ -1117,7 +1358,228 @@
     position: absolute;
     width: 1110px;
     height: 34px;
-    left: 145px;
+    left: 50px;
+    top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    /* Inside Auto Layout */
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    /* identical to box height */
+    letter-spacing: -0.6px;
+
+    /* Dark */
+    color: #18214d;
+    position: static;
+    height: 34px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 34px / 2);
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+
+  .navigation li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .title {
+    position: absolute;
+    height: 160px;
+    left: 330px;
+    right: 430px;
+    top: 146px;
+    width: 540px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 80px;
+
+    /* or 111% */
+    text-align: center;
+    letter-spacing: -3px;
+
+    /* Dark */
+    color: #18214d;
+  }
+
+  .description {
+    position: absolute;
+    height: 88px;
+    left: 377px;
+    right: 478px;
+    top: 322px;
+    width: 445px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    text-align: center;
+  }
+  .reposearch {
+    position: absolute;
+    width: 920px;
+    height: 161px;
+    left: 140px;
+    top: 474px;
+    color: #b1b5c5;
+  }
+
+  .repoinput {
+    width: 694px;
+    height: 58px;
+    left: 240px;
+    top: 474px;
+    /* Neutral */
+    background: #dfe4ea;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+  .font {
+    position: absolute;
+    width: 22.82px;
+    left: 16.16px;
+    top: 17px;
+    bottom: 17px;
+    color: #29335c;
+  }
+  .repotext {
+    position: absolute;
+    width: 700px;
+    height: 28px;
+    left: 45.63px;
+    top: 10px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: -0.5px;
+    /* Placeholder primary */
+    color: #b1b5c5;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  .repotext:focus {
+    color: black;
+  }
+  .buttoncommit {
+    position: absolute;
+    height: 58px;
+    width: 210px;
+    left: 77%;
+    right: 17.14%;
+    top: 0px;
+    background-color: #f3663f;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+  .button {
+    position: absolute;
+    left: 15%;
+    right: 0%;
+    top: 0%;
+    bottom: 5%;
+    /* Buttons / Large */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    align-items: center;
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    /* White */
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  .suggestrepodescrip {
+    position: absolute;
+    height: 20px;
+    width: 300px;
+    left: 300px;
+    right: 167px;
+    top: 90px;
+
+    /* Paragraph / 04 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    letter-spacing: -0.4px;
+    /* Paragraph */
+    color: #3e4462;
+  }
+  .suggestions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 745px;
+    height: 35px;
+    left: 90px;
+    top: 140px;
+  }
+  .suggestionitem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 32px;
+
+    background-color: #29335c;
+    border: 0px solid;
+    border-radius: 8px;
+    color: white;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.4px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    min-height: 60vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    position: absolute;
+    width: 1110px;
+    height: 34px;
+    left: 200px;
     top: 48px;
     display: flex;
     justify-content: space-between;
