@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function DisplayData(props) {
+
     if (props.isError === true) {
         return (<div className={styles.repoerror}>Something went wrong ... Try again please</div>)
     }
@@ -63,13 +64,13 @@ export default function Viewer() {
             } catch (error) {
                 setIsError(true);
                 setIsLoading(false);
+               
             }
         };
 
         fetchData();
     }, [url]);
 
-    console.log(isError)
     return (
         <>
 
@@ -95,34 +96,6 @@ export default function Viewer() {
             <div className={styles.repobodyheading}>
                 <p>{repoHeading}</p>
             </div>
-
-           {/*  {isError && <div className={styles.repoerror}>Something went wrong ... Try again please</div>}
-
-            { isLoading && data.length < 0 ? (
-                <div className={styles.repoloading}>
-                    <p>Loading...</p>
-                </div>
-            ) : (
-                <div>
-                    {
-                        data.map(item => (
-                            <div className={styles.gridcontainer}>
-                                <div className={styles.commit}>
-
-                                    <div className={styles.commitmessage1}>{item.commit.message}</div>
-                                    <div className={styles.commitauthor1}>{item.commit.author.name}</div>
-                                    <div className={styles.commitimage1}>
-                                        <img src={item.author !== null ? item.author.avatar_url : "https://via.placeholder.com/150x150?text=No Image"} alt="Avatar" className={styles.commitimg} />
-                                    </div>
-                                    <div className={styles.committime1}>{item.commit.author.date}</div>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            )}
- */}
-
                  <DisplayData isError={isError} isLoading={isLoading} data={data} /> 
 
 

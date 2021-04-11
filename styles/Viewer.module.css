@@ -130,10 +130,10 @@
   }
 
   .repoerror {
-    position: absolute;
-    width: 489px;
+    position: relative;
+    width: 300px;
     height: 28px;
-    left: 655px;
+    left: 220px;
     top: 258px;
   }
   .repobodyheading {
@@ -371,6 +371,14 @@
     color: #ffffff;
     background-color: transparent;
     border: 0px solid;
+  }
+
+  .repoerror {
+    position: relative;
+    width: 489px;
+    height: 28px;
+    left:80px;
+    top: 258px;
   }
 
   .repoloading {
@@ -652,6 +660,15 @@
 
     /* Dark */
     color: #18214d;
+  }
+
+  
+  .repoerror {
+    position: relative;
+    width: 500px;
+    height: 28px;
+    left: 220px;
+    top: 258px;
   }
   .repobodyheading {
     position: relative;
@@ -1194,11 +1211,11 @@
   }
 
   .repoerror {
-    position: absolute;
-    width: 89px;
+    position: relative;
+    width: 400px;
     height: 28px;
-    left: 655px;
-    top: 188px;
+    left: 355px;
+    top: 150px;
   }
 
   .commit {
@@ -1462,9 +1479,9 @@
 
   .repoerror {
     position: absolute;
-    width: 489px;
+    width: 500px;
     height: 28px;
-    left: 655px;
+    left: 555px;
     top: 258px;
   }
   .commit {
