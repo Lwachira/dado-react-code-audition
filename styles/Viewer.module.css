@@ -755,7 +755,7 @@
     position: relative;
     width: 398px;
     height: 34px;
-    left: 210px;
+    left: 40px;
     top: 48px;
     font-family: Inter;
     font-style: normal;
@@ -775,7 +775,7 @@
     position: relative;
     width: 466px;
     height: 58px;
-    left: 175px;
+    left: 50px;
     top: 136px;
     /* Neutral */
     background: #dfe4ea;
@@ -816,7 +816,7 @@
     position: relative;
     width: 466px;
     height: 58px;
-    left: 175px;
+    left: 50px;
     right: 10.36%;
     top: 146px;
     background-color: #f3663f;
@@ -850,11 +850,10 @@
 
   .repoloading {
     position: absolute;
-    width: 89px;
+    width: 500px;
     height: 28px;
-    left: 300px;
-    top: 450px;
-
+    left: 50px;
+    top: 458px;
     /* Paragraph / 01 */
     font-family: Inter;
     font-style: normal;
@@ -874,14 +873,14 @@
     position: relative;
     width: 500px;
     height: 28px;
-    left: 220px;
-    top: 258px;
+    left: 120px;
+    top: 158px;
   }
   .repobodyheading {
     position: relative;
     width: 486px;
     height: 44px;
-    left: 280px;
+    left: 170px;
     top: 150px;
     display: block;
 
@@ -904,7 +903,7 @@
     display: block;
     width: 396px;
     height: 102px;
-    left: 200px;
+    left: 50px;
     top: 190px;
     justify-content: center;
     padding-bottom: 0px;
@@ -1513,7 +1512,7 @@
     position: absolute;
     left: 0%;
     right: 85.59%;
-    top: 48.09%;
+    top: 68.09%;
     bottom: 0%;
     /* Label / 01 */
     font-family: Inter;
