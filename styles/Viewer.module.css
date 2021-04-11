@@ -2064,3 +2064,270 @@
     color: #18214d;
   }
 }
+
+
+@media (min-width: 1920px) {
+  .gridheadcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo"
+      "repoinput"
+      "button";
+  }
+  .logo {
+    grid-area: logo;
+    position: relative;
+    height: 34px;
+    left: 120px;
+    right: 0%;
+    top: 36px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    /* identical to box height */
+    letter-spacing: -0.6px;
+
+    text-align: center;
+    /* Dark */
+    color: #18214d;
+  }
+  .repoinput {
+    grid-area: repoinput;
+    position: absolute;
+    width: 666px;
+    height: 58px;
+    left: 575px;
+    top: 36px;
+    /* Neutral */
+    background: #dfe4ea;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+  .repotext {
+    position: absolute;
+    width: 300px;
+    height: 28px;
+    left: 45.63px;
+    top: 15px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    letter-spacing: -0.5px;
+
+    /* Placeholder primary */
+    color: #29335c;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  .font {
+    position: absolute;
+    width: 22.82px;
+    left: 16.16px;
+    top: 21px;
+    bottom: 17px;
+    color: #29335c;
+  }
+
+  .button {
+    grid-area: button;
+    position: absolute;
+    width: 198px;
+    height: 58px;
+    left: 1350px;
+    right: 50px;
+    top: 35px;
+    background-color: #f3663f;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+
+  .buttontext {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 30%;
+    bottom: 21.72%;
+
+    /* Buttons / Large */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    /* White */
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px solid;
+  }
+
+  .repobodyheading {
+    position: absolute;
+    width: 286px;
+    height: 44px;
+    left: 757px;
+    top: 162px;
+    /* Display / 03 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    /* identical to box height, or 122% */
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    /* Primary */
+    color: #29335c;
+  }
+
+  .repoloading {
+    position: absolute;
+    width: 89px;
+    height: 28px;
+    left: 855px;
+    top: 288px;
+
+    /* Paragraph / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.4px;
+
+    /* Dark */
+    color: #18214d;
+  }
+
+  .repoerror {
+    position: absolute;
+    width: 500px;
+    height: 28px;
+    left: 755px;
+    top: 258px;
+  }
+  .commit {
+    position: relative;
+    width: 1110px;
+    height: 94px;
+    left: 345px;
+    top: 238px;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "commitimage commitmessage committime"
+      "commitauthor commitmessage committime";
+  }
+
+  .commitmessage {
+    grid-area: commitmessage;
+    position: absolute;
+    width: 700px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    left: 16.85%;
+    right: 42.79%;
+    top: 32.98%;
+    bottom: 37.23%;
+
+    /* Paragraph / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    letter-spacing: -0.4px;
+
+    /* Dark */
+    color: #18214d;
+  }
+  .committime {
+    grid-area: committime;
+    position: absolute;
+    left: 85.05%;
+    right: 0%;
+    top: 32.98%;
+    bottom: 37.23%;
+
+    /* Paragraph / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: right;
+    letter-spacing: -0.4px;
+
+    /* Dark */
+    color: #18214d;
+  }
+  .commitimage {
+    grid-area: commitimage;
+    position: absolute;
+    left: 4.5%;
+    right: 90.09%;
+    top: 0%;
+    bottom: 36.17%;
+  }
+
+  .commitimg {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    left: 50px;
+    border-radius: 50%;
+  }
+  .commitauthor {
+    grid-area: commitauthor;
+    position: absolute;
+    left: 0%;
+    right: 85.59%;
+    top: 48.09%;
+    bottom: 0%;
+    /* Label / 01 */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+
+    /* identical to box height, or 136% */
+    text-align: center;
+    letter-spacing: -0.55px;
+
+    /* Dark */
+    color: #18214d;
+  }
+}
