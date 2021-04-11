@@ -547,14 +547,14 @@
 
   .repoinput {
     position: absolute;
-    width: 300px;
+    width: 396px;
     height: 58px;
-    left: 40px;
+    left: 0px;
     top: 30px;
     /* Neutral */
     background: #dfe4ea;
     border: 0px solid;
-    border-radius: 8px;
+    border-radius: 8px; 
   }
   .font {
     position: absolute;
@@ -588,9 +588,9 @@
   }
   .buttoncommit {
     position: absolute;
-    width: 300px;
+    width: 396px;
     height: 58px;
-    left: 40px;
+    left: 0px;
     top: 120px;
     background-color: #f3663f;
     border: 0px solid;
