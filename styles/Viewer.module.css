@@ -515,6 +515,7 @@
     background: #dfe4ea;
     border: 0px solid;
     border-radius: 8px;
+    /* visibility: hidden; */
   }
   .repotext {
     position: absolute;
@@ -555,7 +556,9 @@
     background-color: #f3663f;
     border: 0px solid;
     border-radius: 8px;
-  }
+/*     visibility: hidden;
+ */  }
+
 
   .buttontext {
     position: absolute;
