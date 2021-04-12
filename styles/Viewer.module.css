@@ -1807,6 +1807,7 @@
       "logo"
       "repoinput"
       "button";
+      background: #EFF2F6;
   }
   .logo {
     grid-area: logo;
