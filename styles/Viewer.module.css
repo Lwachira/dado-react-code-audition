@@ -412,7 +412,6 @@
       "commitimage commitauthor committime";
   }
 
-  
   .commitmessage {
     grid-area: commitmessage;
     /* Paragraph / 01 */
@@ -488,7 +487,7 @@
     position: relative;
     width: 198px;
     height: 34px;
-    left:120px;
+    left: 120px;
     top: 24px;
     font-family: Inter;
     font-style: normal;
@@ -555,9 +554,9 @@
     background-color: #f3663f;
     border: 0px solid;
     border-radius: 8px;
-/*     visibility: hidden;
- */  }
-
+    /*     visibility: hidden;
+ */
+  }
 
   .buttontext {
     position: absolute;
@@ -2063,7 +2062,6 @@
     color: #18214d;
   }
 }
-
 
 @media (min-width: 1920px) {
   .gridheadcontainer {
