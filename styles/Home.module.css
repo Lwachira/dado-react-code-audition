@@ -259,7 +259,7 @@
     height: 34px;
     right: 10%;
     top: calc(50% - 34px / 2);
-    left:60px;
+    left: 60px;
     text-align: center;
   }
   .navigation {
@@ -555,7 +555,7 @@
     /* Neutral */
     background: #dfe4ea;
     border: 0px solid;
-    border-radius: 8px; 
+    border-radius: 8px;
   }
   .font {
     position: absolute;
@@ -1787,7 +1787,6 @@
     letter-spacing: -0.4px;
   }
 }
-
 
 @media (min-width: 1920px) {
   .container {
