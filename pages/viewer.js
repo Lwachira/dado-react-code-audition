@@ -3,61 +3,6 @@ import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function FormatDate(prop) {
-  let cleandate = new Date(prop.gitdate);
-  return cleandate.toLocaleString();
-}
-
-function DisplayData(props) {
-  if (props.isError === true) {
-    return (
-      <div className={styles.repoerror}>
-        Something went wrong ... Try again please
-      </div>
-    );
-  }
-
-  if (props.isLoading || props.data.length < 0) {
-    return (
-      <div className={styles.repoloading}>
-        <p>Loading...</p>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        {props.data.map((item) => (
-          <div className={styles.gridcontainer}>
-            <div className={styles.commit}>
-              <div className={styles.commitmessage}>{item.commit.message}</div>
-              <div className={styles.commitauthor}>
-                {item.commit.author.name}
-              </div>
-              <div className={styles.commitimage}>
-                <img
-                  src={
-                    item.author !== null
-                      ? item.author.avatar_url
-                      : "https://via.placeholder.com/150x150?text=No Image"
-                  }
-                  alt="Avatar"
-                  className={styles.commitimg}
-                />
-              </div>
-              <div className={styles.committime}>
-                {" "}
-                {item.commit.author.date
-                  ? FormatDate({ gitdate: item.commit.author.date })
-                  : null}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-}
-
 export default function Viewer() {
   const router = useRouter();
   const repo = router.query.repo;
@@ -141,4 +86,59 @@ export default function Viewer() {
       <DisplayData isError={isError} isLoading={isLoading} data={data} />
     </>
   );
+}
+
+function DisplayData(props) {
+  if (props.isError === true) {
+    return (
+      <div className={styles.repoerror}>
+        Something went wrong ... Try again please
+      </div>
+    );
+  }
+
+  if (props.isLoading || props.data.length < 0) {
+    return (
+      <div className={styles.repoloading}>
+        <p>Loading...</p>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {props.data.map((item) => (
+          <div className={styles.gridcontainer} key={item.sha}>
+            <div className={styles.commit}>
+              <div className={styles.commitmessage}>{item.commit.message}</div>
+              <div className={styles.commitauthor}>
+                {item.commit.author.name}
+              </div>
+              <div className={styles.commitimage}>
+                <img
+                  src={
+                    item.author !== null
+                      ? item.author.avatar_url
+                      : "https://via.placeholder.com/150x150?text=No Image"
+                  }
+                  alt="Avatar"
+                  className={styles.commitimg}
+                />
+              </div>
+              <div className={styles.committime}>
+                {" "}
+                {item.commit.author.date
+                  ? FormatDate({ gitdate: item.commit.author.date })
+                  : null}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+}
+
+function FormatDate(props) {
+  let cleandate = new Date(props.gitdate);
+  return cleandate.toLocaleString();
 }
